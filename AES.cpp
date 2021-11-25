@@ -26,14 +26,6 @@ class AES {
         }
     }
     
-    void compare(const unsigned char* a, const unsigned char* b) {
-        for (int i = 0; i < 16; ++i) {
-            if (a[i] != b[i]) {
-                std::cout << "Not equal at index: " << i << std::endl;
-            }
-        }
-    }
-    
     void encrypt(const unsigned char* plainText, unsigned char* cipherText) {
         std::memcpy(state, plainText, 16);
         
