@@ -307,9 +307,9 @@ void printHex(const unsigned char* t) {
 
 int main()
 {
-    AES a(reinterpret_cast<const unsigned char*>("That's my key!"));
+    AES a(reinterpret_cast<const unsigned char*>("Hi,I am your key"));
     unsigned char* cipherText = static_cast<unsigned char*>(std::malloc(16));
-    const unsigned char* plainText = reinterpret_cast<const unsigned char*>("Yeah you know me!");
+    const unsigned char* plainText = reinterpret_cast<const unsigned char*>("Yeah you know me");
     
     std::cout << "Plaintext:" << std::endl;
     printHex(plainText);
